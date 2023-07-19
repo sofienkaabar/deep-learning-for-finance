@@ -10,12 +10,6 @@ raw_data = pd.read_excel('ISM_PMI.xlsx')
 raw_data = raw_data.dropna()
 raw_data = np.reshape(np.array(raw_data), (-1))
 
-'''
-plt.plot(raw_data[-905:], label = 'ISM PMI')
-plt.legend()
-plt.grid()
-'''
-
 # Setting the hyperparameters
 num_lags = 40
 train_test_split = 0.8
