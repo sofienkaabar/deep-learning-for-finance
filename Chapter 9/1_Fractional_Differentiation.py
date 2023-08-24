@@ -31,7 +31,7 @@ diff_data = diff_data[window - 2:, ]
 fig, axes = plt.subplots(nrows = 3, ncols = 1)
 
 axes[0].plot(data[5:,], label = 'S&P 500', color = 'blue', linewidth = 1)
-axes[1].plot(frac_data[5:,], label = 'Fractionally Differentiated S&P 500 (0.48)', color = 'orange', linewidth = 1)
+axes[1].plot(frac_data[5:,], label = 'Fractionally Differentiated S&P 500 (0.48)', color = 'red', linewidth = 1)
 axes[2].plot(diff_data[5:,], label = 'Differenced S&P 500', color = 'green', linewidth = 1)
 
 axes[0].legend()
