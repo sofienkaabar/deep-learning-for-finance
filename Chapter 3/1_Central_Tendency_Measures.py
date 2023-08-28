@@ -39,7 +39,7 @@ plt.plot(cpi_latest[:], color = 'black', linewidth = 1.5,
 
 # Plotting horizontal lines that represent the mean and the zero threshold
 plt.axhline(y = mean, color = 'red', linestyle = 'dashed', 
-         label = '10-Year Mean')
+         label = 'Mean')
 plt.axhline(y = 0, color = 'blue', linestyle = 'dashed', linewidth = 1)
 
 # Calling a grid to facilitate the visual component
@@ -61,7 +61,7 @@ plt.plot(cpi_latest[:], color = 'black', linewidth = 1.5,
 
 # Plotting horizontal lines that represent the mean and the zero threshold
 plt.axhline(y = median, color = 'red', linestyle = 'dashed', 
-            label = '10-Year Median')
+            label = 'Median')
 plt.axhline(y = 0, color = 'blue', linestyle = 'dashed', linewidth = 1)
 
 # Calling a grid to facilitate the visual component
