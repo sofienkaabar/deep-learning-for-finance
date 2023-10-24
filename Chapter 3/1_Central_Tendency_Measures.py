@@ -59,7 +59,7 @@ print('The median of the dataset: ' + str(median), '%')
 plt.plot(cpi_latest[:], color = 'black', linewidth = 1.5, 
          label = 'Change in CPI Year-on-Year')
 
-# Plotting horizontal lines that represent the mean and the zero threshold
+# Plotting horizontal lines that represent the median and the zero threshold
 plt.axhline(y = median, color = 'red', linestyle = 'dashed', 
             label = 'Median')
 plt.axhline(y = 0, color = 'blue', linestyle = 'dashed', linewidth = 1)
