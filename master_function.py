@@ -172,9 +172,9 @@ def plot_train_test_values(window, train_window, y_train, y_test, y_predicted):
     plotting_time_series[0:first, 0] = y_train[-first:]
     plotting_time_series[first:, 1] = y_test[0:second, 0]
     plotting_time_series[first:, 2] = y_predicted[0:second, 0] 
-    plotting_time_series[0:first, 1] = plotting_time_series[0:first, 1] / 0
-    plotting_time_series[0:first, 2] = plotting_time_series[0:first, 2] / 0
-    plotting_time_series[first:, 0] = plotting_time_series[first:, 0] / 0
+    plotting_time_series[0:first, 1] = np.nan
+    plotting_time_series[0:first, 2] = np.nan
+    plotting_time_series[first:, 0] = np.nan
     plt.plot(plotting_time_series[:, 0], label = 'Training data', color = 'black', linewidth = 2.5)
     plt.plot(plotting_time_series[:, 1], label = 'Test data', color = 'black', linestyle = 'dashed', linewidth = 2)
     plt.plot(plotting_time_series[:, 2], label = 'Predicted data', color = 'red', linewidth = 1)
